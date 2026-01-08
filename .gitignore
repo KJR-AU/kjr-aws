@@ -1,0 +1,22 @@
+# Local Terraform state and provider cache
+.terraform/
+
+*.tfstate
+*.tfstate.*
+
+# Local plans and crash dumps
+*.tfplan
+crash.log
+crash.*.log
+
+# Local-only variable overrides
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration
+.terraformrc
+terraform.rc
