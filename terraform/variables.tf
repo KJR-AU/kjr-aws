@@ -44,3 +44,15 @@ variable "role_definitions" {
     }
   }
 }
+
+variable "users" {
+  type = list(
+    object({
+      email     = string
+      firstName = string
+      lastName  = string
+    })
+  )
+  description = "List of users to create in the Identity Store."
+  default     = []
+}

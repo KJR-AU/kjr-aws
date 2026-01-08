@@ -39,3 +39,15 @@ output "permission_sets" {
   value       = module.identity_center_groups.permission_sets
   description = "Permission set ARNs keyed by account-role."
 }
+
+module "identity_center_users" {
+  source = "./modules/identity-center-users"
+
+  users             = var.users
+  identity_store_id = var.identity_store_id
+}
+
+output "user_ids" {
+  value       = module.identity_center_users.user_ids
+  description = "Created user ids"
+}
