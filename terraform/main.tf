@@ -9,17 +9,12 @@ terraform {
   }
 
   backend "s3" {
-    region  = "ap-southeast-2"
-    profile = "mgmt-admin"
     bucket = "kjr-terraform"
     key = "state/kjr-aws/terraform.tfstate"
   }
 }
 
-provider "aws" {
-  region = var.region
-  profile = "mgmt-admin"
-}
+provider "aws" {}
 
 module "identity_center_groups" {
   source = "./modules/identity-center-groups"
