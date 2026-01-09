@@ -48,9 +48,9 @@ variable "role_definitions" {
 variable "users" {
   type = list(
     object({
-      email       = string
-      firstName   = string
-      lastName    = string
+      email     = string
+      firstName = string
+      lastName  = string
       assignments = optional(list(object({
         account = string
         role    = string
