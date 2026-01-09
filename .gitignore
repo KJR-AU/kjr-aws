@@ -5,7 +5,7 @@
 *.tfstate.*
 
 # Local plans and crash dumps
-*.tfplan
+*tfplan
 crash.log
 crash.*.log
 
