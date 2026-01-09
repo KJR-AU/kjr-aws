@@ -35,17 +35,6 @@ accounts = [
 
 users = [
   {
-    email     = "joe.burton@kjr.com.au"
-    firstName = "Joe"
-    lastName  = "Burton"
-    assignments = [
-      {
-        account = "llm-testing"
-        role    = "admins"
-      }
-    ]
-  },
-  {
     email     = "joshua.santos@kjr.com.au"
     firstName = "Joshua"
     lastName  = "Santos"
