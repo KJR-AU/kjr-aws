@@ -48,7 +48,7 @@ jobs:
       - name: Terraform plan
         id: plan
         run: |
-          terraform -chdir=terraform plan -input=false -no-color -out=tfplan -var-file terraform/access.tfvars
+          terraform -chdir=terraform plan -input=false -no-color -out=tfplan -var-file access.tfvars
           terraform -chdir=terraform show -no-color tfplan > plan.txt
 
       - name: Comment plan on PR
