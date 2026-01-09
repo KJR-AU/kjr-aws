@@ -35,7 +35,7 @@
         "source=${localEnv:HOME}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached",
         "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
     ],
-    "postCreateCommand": [],
+    "postCreateCommand": ["terraform", "-chdir=terraform", "init"],
     "remoteUser": "vscode"
   }
   
