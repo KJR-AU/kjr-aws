@@ -27,8 +27,8 @@ resource "aws_ssoadmin_account_assignment" "assignments" {
   instance_arn       = var.sso_instance_arn
   permission_set_arn = each.value.permission_set_arn
   # aws_identitystore_group.id includes the identity store ID; account assignments expect only the group GUID.
-  principal_id       = trimprefix(aws_identitystore_group.groups[each.key].id, "${var.identity_store_id}/")
-  principal_type     = "GROUP"
-  target_id          = each.value.account_id
-  target_type        = "AWS_ACCOUNT"
+  principal_id   = trimprefix(aws_identitystore_group.groups[each.key].id, "${var.identity_store_id}/")
+  principal_type = "GROUP"
+  target_id      = each.value.account_id
+  target_type    = "AWS_ACCOUNT"
 }
