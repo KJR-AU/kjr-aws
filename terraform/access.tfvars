@@ -40,8 +40,8 @@ users = [
     lastName  = "Burton"
     assignments = [
       {
-      account = "llm-testing"
-      role    = "admins"
+        account = "llm-testing"
+        role    = "admins"
       }
     ]
   },
@@ -51,20 +51,20 @@ users = [
     lastName  = "Santos"
     assignments = [
       {
-      account = "kjr-drone-data"
-      role    = "power-users"
+        account = "kjr-drone-data"
+        role    = "power-users"
       },
       {
-      account = "salty-monkey-drone-data"
-      role    = "power-users"
+        account = "salty-monkey-drone-data"
+        role    = "power-users"
       },
       {
-      account = "kjr-interns-nov-23"
-      role    = "power-users"
+        account = "kjr-interns-nov-23"
+        role    = "power-users"
       },
       {
-      account = "western-yalanji-rock-art"
-      role    = "power-users"
+        account = "western-yalanji-rock-art"
+        role    = "power-users"
       }
     ]
   },
@@ -74,44 +74,44 @@ users = [
     lastName  = "Potums"
     assignments = [
       {
-      account = "kjr-drone-data"
-      role    = "power-users"
+        account = "kjr-drone-data"
+        role    = "power-users"
       },
       {
-      account = "salty-monkey-drone-data"
-      role    = "power-users"
+        account = "salty-monkey-drone-data"
+        role    = "power-users"
       },
       {
-      account = "kjr-interns-nov-23"
-      role    = "power-users"
+        account = "kjr-interns-nov-23"
+        role    = "power-users"
       },
       {
-      account = "western-yalanji-rock-art"
-      role    = "power-users"
+        account = "western-yalanji-rock-art"
+        role    = "power-users"
       },
       {
-      account = "goondoi-trail-webapp"
-      role    = "power-users"
+        account = "goondoi-trail-webapp"
+        role    = "power-users"
       },
       {
-      account = "kjr-drone-data"
-      role    = "admins"
+        account = "kjr-drone-data"
+        role    = "admins"
       },
       {
-      account = "salty-monkey-drone-data"
-      role    = "admins"
+        account = "salty-monkey-drone-data"
+        role    = "admins"
       },
       {
-      account = "kjr-interns-nov-23"
-      role    = "admins"
+        account = "kjr-interns-nov-23"
+        role    = "admins"
       },
       {
-      account = "western-yalanji-rock-art"
-      role    = "admins"
+        account = "western-yalanji-rock-art"
+        role    = "admins"
       },
       {
-      account = "goondoi-trail-webapp"
-      role    = "admins"
+        account = "goondoi-trail-webapp"
+        role    = "admins"
       }
     ]
   },
@@ -121,8 +121,8 @@ users = [
     lastName  = "Lee"
     assignments = [
       {
-      account = "goondoi-trail-webapp"
-      role    = "power-users"
+        account = "goondoi-trail-webapp"
+        role    = "power-users"
       }
     ]
   }
