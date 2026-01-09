@@ -30,6 +30,15 @@ module "identity_center_groups" {
   role_definitions  = var.role_definitions
 }
 
+module "identity_center_users" {
+  source = "./modules/identity-center-users"
+
+  identity_store_id = var.identity_store_id
+  users             = var.users
+  role_definitions  = var.role_definitions
+  group_ids         = module.identity_center_groups.group_ids
+}
+
 output "group_names" {
   value       = module.identity_center_groups.group_names
   description = "Identity Center groups created for each account role."
@@ -40,14 +49,7 @@ output "permission_sets" {
   description = "Permission set ARNs keyed by account-role."
 }
 
-module "identity_center_users" {
-  source = "./modules/identity-center-users"
-
-  users             = var.users
-  identity_store_id = var.identity_store_id
-}
-
 output "user_ids" {
   value       = module.identity_center_users.user_ids
-  description = "Created user ids"
+  description = "Identity Store user IDs keyed by email."
 }

@@ -7,3 +7,8 @@ output "permission_sets" {
   value       = { for key, plan in local.group_plan : key => plan.permission_set_arn }
   description = "Permission set ARNs keyed by account-role."
 }
+
+output "group_ids" {
+  value       = { for key, group in aws_identitystore_group.groups : key => group.group_id }
+  description = "Identity Store group IDs keyed by account-role."
+}

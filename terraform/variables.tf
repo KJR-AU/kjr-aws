@@ -34,11 +34,11 @@ variable "role_definitions" {
       suffix             = "admins"
       permission_set_arn = "arn:aws:sso:::permissionSet/aws-managed/AWSAdministratorAccess"
     }
-    power_users = {
+    power-users = {
       suffix             = "power-users"
       permission_set_arn = "arn:aws:sso:::permissionSet/aws-managed/AWSPowerUserAccess"
     }
-    read_only = {
+    read-only = {
       suffix             = "read-only"
       permission_set_arn = "arn:aws:sso:::permissionSet/aws-managed/AWSReadOnlyAccess"
     }
@@ -48,9 +48,13 @@ variable "role_definitions" {
 variable "users" {
   type = list(
     object({
-      email     = string
-      firstName = string
-      lastName  = string
+      email       = string
+      firstName   = string
+      lastName    = string
+      assignments = optional(list(object({
+        account = string
+        role    = string
+      })), [])
     })
   )
   description = "List of users to create in the Identity Store."
