@@ -14,5 +14,14 @@ users = [
       account = "my-test"
       role    = "read-only"
     }]
+  },
+  {
+    email     = "test.user@example.com"
+    firstName = "Test1"
+    lastName  = "User2"
+    assignments = [{
+      account = "my-test"
+      role    = "power-users"
+    }]
   }
 ]
