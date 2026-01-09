@@ -10,7 +10,7 @@ terraform {
 
   backend "s3" {
     bucket = "kjr-terraform"
-    key = "state/kjr-aws/terraform.tfstate"
+    key    = "state/kjr-aws/terraform.tfstate"
   }
 }
 
