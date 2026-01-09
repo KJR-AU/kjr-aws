@@ -6,9 +6,9 @@ variable "identity_store_id" {
 variable "users" {
   type = list(
     object({
-      email       = string
-      firstName   = string
-      lastName    = string
+      email     = string
+      firstName = string
+      lastName  = string
       assignments = optional(list(object({
         account = string
         role    = string
